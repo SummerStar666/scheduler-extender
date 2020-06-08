@@ -2,7 +2,6 @@ package controller
 
 import (
 	"log"
-	"math/rand"
 
 	schedulerapi "k8s.io/kubernetes/pkg/scheduler/api"
 )

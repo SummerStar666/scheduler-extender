@@ -5,7 +5,7 @@ go 1.12
 require (
 	github.com/julienschmidt/httprouter v1.3.0
 	k8s.io/api v0.0.0
-	k8s.io/kubernetes v1.14.9
+	k8s.io/kubernetes v1.14.10
 
 )
 

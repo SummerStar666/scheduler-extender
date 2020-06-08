@@ -35,7 +35,6 @@ func filter(args schedulerapi.ExtenderArgs) *schedulerapi.ExtenderFilterResult {
 }
 
 func podFitsOnNode(pod *v1.Pod, node v1.Node) (bool, []string, error) {
-	fits := true
 	var failReasons []string
 
 	judge := (rand.Intn(100)%5 == 3)

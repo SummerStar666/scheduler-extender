@@ -46,7 +46,7 @@ func podFitsOnNode(pod *v1.Pod, node v1.Node) (bool, []string, error) {
 	}
 	log.Printf("pod %v/%v does not fit on node %v\n", pod.Name, pod.Namespace, node.Name)
 
-	failures = "It's not fits on this node."
+	failures := "It's not fits on this node."
 	failReasons = append(failReasons, failures)
 
 	return false, failReasons, nil

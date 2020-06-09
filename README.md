@@ -41,11 +41,11 @@ func prioritize(args schedulerapi.ExtenderArgs) *schedulerapi.HostPriorityList {
 	nodes := args.Nodes.Items
 	hostPriorityList := make(schedulerapi.HostPriorityList, len(nodes))
 	
-  for i, node := range nodes {
+  	for i, node := range nodes {
 		score := i+1
 		log.Printf(PrioMsg, pod.Name, pod.Namespace, score)
 		
-    hostPriorityList[i] = schedulerapi.HostPriority{
+    		hostPriorityList[i] = schedulerapi.HostPriority{
 			Host:  node.Name,
 			Score: score,
 		}
